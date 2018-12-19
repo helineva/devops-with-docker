@@ -1,0 +1,6 @@
+The image's Docker Hub page: https://hub.docker.com/r/helineva/bc-average
+
+$ docker pull helineva/bc-average
+
+$ docker run bc-average -3.2 5 2.1 4
+1.97

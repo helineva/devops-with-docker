@@ -1,0 +1,6 @@
+Python3 with BeautifulSoup4 based on Ubuntu 16.04.
+Docker Hub page: https://hub.docker.com/r/helineva/python3-bs4
+
+$ docker pull helineva/python3-bs4
+
+$ docker run -it -v $(pwd):/python python3-bs4

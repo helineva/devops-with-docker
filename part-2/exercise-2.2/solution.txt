@@ -1,0 +1,7 @@
+$ docker-compose up -d
+
+...
+browse to http://localhost:5000
+...
+
+$ docker-compose down

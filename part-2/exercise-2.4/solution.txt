@@ -1,0 +1,14 @@
+$ git clone https://github.com/docker-hy/ml-kurkkumopo-frontend
+$ docker build -t ml-kurkkumopo-frontend ml-kurkkumopo-frontend
+$ git clone https://github.com/docker-hy/ml-kurkkumopo-backend
+$ docker build -t ml-kurkkumopo-backend ml-kurkkumopo-backend
+$ git clone https://github.com/docker-hy/ml-kurkkumopo-training
+$ docker build -t ml-kurkkumopo-training ml-kurkkumopo-training
+
+$ docker-compose up -d
+
+...
+browse http://localhost:3000
+... 
+
+$ docker-compose down

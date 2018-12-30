@@ -1,0 +1,2 @@
+$ docker build -t yle-dl .
+$ docker run -v $(pwd):/app yle-dl https://areena.yle.fi/1-3361013

@@ -1,0 +1,7 @@
+$ docker images
+REPOSITORY                          TAG                   IMAGE ID            CREATED             SIZE
+frontend-example-docker             latest                78fec1a51d87        10 days ago         495MB
+backend-example-docker              latest                2f64ca308fa1        10 days ago         419MB
+...
+frontend-example-docker-optimized   latest                b71883ac39db        7 days ago          395MB
+backend-example-docker-optimized    latest                f3b102369302        2 minutes ago       320MB

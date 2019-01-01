@@ -1,0 +1,6 @@
+$ docker build -t bc-average-optimized .
+$ docker images
+REPOSITORY                          TAG                   IMAGE ID            CREATED             SIZE
+bc-average-optimized                latest                df5a88c88042        16 seconds ago      8.37MB
+bc-average                          latest                0f5759a8b12d        12 days ago         236MB
+

@@ -1,0 +1,9 @@
+$ docker build -t backend-example-docker-node backend
+$ docker build -t frontend-example-docker-node frontend
+$ docker images
+REPOSITORY                          TAG                   IMAGE ID            CREATED              SIZE
+frontend-example-docker-node        latest                ea2237d9afe5        About a minute ago   203MB
+backend-example-docker-node         latest                3766ba1cd8cb        4 minutes ago        129MB
+frontend-example-docker             latest                90dbf3f74fe4        3 hours ago          395MB
+backend-example-docker              latest                b22a2e5bccb2        3 hours ago          320MB
+

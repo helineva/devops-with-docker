@@ -1,0 +1,25 @@
+Usage of the image (built here under the tag docker-hub-publisher):
+docker run -v /var/run/docker.sock:/var/run/docker.sock -e USERNAME=<docker-hub-username> -e PASSWORD=<docker-hub-password> docker-hub-publisher <github-repository-url> <image-tag>
+
+Example session publishing a repository of my own and forks of the course example projects where Dockerfiles have been added:
+
+$ docker build -t docker-hub-publisher .
+$ docker search helineva
+NAME                   DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
+helineva/python3-bs4   Python3 with BeautifulSoup4 based on Ubuntu …   0                                       
+helineva/bc-average    A docker image to calculate the arithmetic m…   0                                       
+$ docker run -v /var/run/docker.sock:/var/run/docker.sock -e USERNAME=helineva -e PASSWORD=<omitted> docker-hub-publisher 'https://github.com/helineva/bc-average-docker' bc-average2
+$ docker search helineva
+NAME                              DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
+helineva/python3-bs4              Python3 with BeautifulSoup4 based on Ubuntu …   0                                       
+helineva/bc-average               A docker image to calculate the arithmetic m…   0                                                                           
+helineva/bc-average2                                                              0   
+$ docker run -v /var/run/docker.sock:/var/run/docker.sock -e USERNAME=helineva -e PASSWORD=<omitted> docker-hub-publisher 'https://github.com/helineva/backend-example-docker' backend-example-docker
+$ docker run -v /var/run/docker.sock:/var/run/docker.sock -e USERNAME=helineva -e PASSWORD=<omitted> docker-hub-publisher 'https://github.com/helineva/frontend-example-docker' frontend-example-docker
+$ docker search helineva
+NAME                              DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
+helineva/python3-bs4              Python3 with BeautifulSoup4 based on Ubuntu …   0                                       
+helineva/bc-average               A docker image to calculate the arithmetic m…   0                                       
+helineva/bc-average2                                                              0       
+helineva/backend-example-docker                                                   0                                       
+helineva/frontend-example-docker                                                  0
